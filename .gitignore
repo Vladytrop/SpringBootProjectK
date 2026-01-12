@@ -1,0 +1,314 @@
+########################################
+# IDE и редакторы
+########################################
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+########################################
+# Maven
+########################################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Maven Wrapper (исключения - эти файлы должны быть в репозитории)
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+########################################
+# Gradle
+########################################
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+########################################
+# Java
+########################################
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+*.log
+
+# Package Files
+*.ear
+*.war
+
+# Logs
+logs/
+
+########################################
+# Spring Boot специфика
+########################################
+# Локальные конфигурационные файлы (НИКОГДА НЕ КОММИТЬТЕ!)
+src/main/resources/application-local.properties
+src/main/resources/application-local.yml
+src/main/resources/application-dev.properties
+src/main/resources/application-dev.yml
+src/main/resources/application-staging.properties
+src/main/resources/application-staging.yml
+src/main/resources/application-test.properties
+src/main/resources/application-test.yml
+
+# ПРОД конфиги - тоже лучше не коммитить
+src/main/resources/application-prod.properties
+src/main/resources/application-prod.yml
+
+# Исключения - эти файлы должны быть в репозитории
+!src/main/resources/application.properties
+!src/main/resources/application.yml
+
+# Шаблоны конфигов (можно коммитить)
+!src/main/resources/application.properties.example
+!src/main/resources/application.yml.example
+!src/main/resources/application-local.properties.example
+!src/main/resources/application-local.yml.example
+
+########################################
+# Базы данных
+########################################
+*.db
+*.sqlite
+*.dump
+*.backup
+*.sql
+*.h2.db
+.mv.db
+derby.log
+
+# Flyway/Liquibase (локальные)
+flyway-*.sql
+liquibase-*.sql
+
+########################################
+# Docker и контейнеры
+########################################
+docker-compose.override.yml
+*.dockerignore
+.env.docker
+
+# Локальные данные Docker
+data/
+volumes/
+mysql-data/
+postgres-data/
+
+########################################
+# Окружение и переменные
+########################################
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.properties
+config.properties
+
+########################################
+# Операционные системы
+########################################
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+########################################
+# Node.js (если есть фронтенд)
+########################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/
+.pnp.*
+.next/
+dist/
+build/
+.cache/
+
+########################################
+# Python (если есть Python скрипты)
+########################################
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.ropeproject
+
+########################################
+# Документация
+########################################
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+########################################
+# Тесты и отчеты
+########################################
+# Отчеты тестирования
+target/surefire-reports/
+target/failsafe-reports/
+target/site/
+coverage/
+.nyc_output/
+
+# JaCoCo
+*.exec
+jacoco.exec
+
+# Sonar
+.sonar/
+sonar-project.properties
+
+########################################
+# Пакетные менеджеры и сборщики
+########################################
+# Bower
+bower_components/
+
+# Composer (PHP)
+vendor/
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Rust
+target/
+
+########################################
+# Файлы IDE
+########################################
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Rider
+*.sln.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+.idea/
+
+########################################
+# Логи
+########################################
+*.log
+logs/
+*.logs
+*.pid
+*.seed
+*.pid.lock
+
+########################################
+# Файлы приложения
+########################################
+# Генерируемые файлы
+upload/
+tmp/
+temp/
+uploads/
+cache/
+session/
+
+# Архивы
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+########################################
+# Системные файлы
+########################################
+# Crashlytics
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+########################################
+# Специфично для PostgreSQL (ваш случай)
+########################################
+postgresql/
+pgdata/
+pg_log/
+postgresql.conf
+pg_hba.conf
+
+# Дампы баз данных
+*.backup
+*.dump
+*.sql.gz
+*.sql.bz2
